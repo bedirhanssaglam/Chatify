@@ -91,3 +91,28 @@ This project is a messaging application developed using [Flutter](https://flutte
 - **Firebase Auth Integration**: User authentication is handled through Firebase Auth.
 - **Firebase Firestore**: Real-time messaging is powered by Firebase Firestore.
 - **Bloc State Management**: The application uses Bloc for state management to enhance code organization and reusability.
+
+### Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/bedirhanssaglam/Chatify.git
+```
+
+2. Install the required packages:
+
+```bash
+flutter pub get
+```
+
+3. Set up a Firebase project and place the `google-services.json` (for Android) and `GoogleService-Info.plist` (for iOS) files in their respective directories.
+
+4. Run the application:
+
+```bash
+flutter run
+```
+
+### Contributing
+If you would like to contribute, please open an issue first. Contributions to improve this project are welcome and appreciated!

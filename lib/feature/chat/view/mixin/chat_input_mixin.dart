@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:todo/feature/chat/bloc/chat_bloc.dart';
 import 'package:todo/feature/chat/view/widgets/chat_input.dart';
 import 'package:todo/product/container/product_state_items.dart';
@@ -11,14 +10,14 @@ base mixin ChatInputMixin on State<ChatInput> {
   final ImagePickerService imagePickerService = ImagePickerService();
 
   Future<void> sendImage(BuildContext context) async {
-    final XFile? image = await imagePickerService.pickImage(context);
+    final image = await imagePickerService.pickImage(context);
     if (image != null) {
       ProductStateItems.chatBloc.add(ChatEvent.sendMessage(widget.receiverId, '', image.path));
     }
   }
 
   void sendMessage() {
-    final String message = messageController.trimmedText;
+    final message = messageController.trimmedText;
     if (message.isNotEmpty) {
       ProductStateItems.chatBloc.add(ChatEvent.sendMessage(widget.receiverId, message, null));
       messageController.clear();

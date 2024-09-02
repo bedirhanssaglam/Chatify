@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 final class ImageView extends StatelessWidget {
-  const ImageView({super.key, required this.imageUrl});
+  const ImageView({required this.imageUrl, super.key});
 
   final String imageUrl;
 

@@ -11,7 +11,7 @@ import 'package:widget/widget.dart';
 Future<void> main() async {
   await AppInitialize.initialize();
 
-  final AuthService authService = ProductStateItems.authService;
+  final authService = ProductStateItems.authService;
   await authService.account.first;
 
   runApp(ProductLocalization(child: _Chatify(authService: authService)));

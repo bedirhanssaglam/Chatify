@@ -6,10 +6,10 @@ sealed class LoginEvent extends Equatable {
 }
 
 final class LoginRequested extends LoginEvent {
+  LoginRequested({required this.email, required this.password});
+
   final String email;
   final String password;
-
-  LoginRequested({required this.email, required this.password});
 
   @override
   List<Object?> get props => [email, password];

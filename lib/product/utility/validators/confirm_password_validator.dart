@@ -4,9 +4,10 @@ import 'package:todo/product/utility/validators/base/base_validator.dart';
 import 'package:todo/product/utility/validators/base/product_validators.dart';
 
 final class ConfirmPasswordValidator extends BaseValidator {
-  final String firstValue, secondValue;
-
   ConfirmPasswordValidator({required this.firstValue, required this.secondValue});
+
+  final String firstValue;
+  final String secondValue;
 
   @override
   List<ValidatorFunction> get validators => [

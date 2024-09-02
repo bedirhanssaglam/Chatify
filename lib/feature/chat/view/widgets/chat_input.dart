@@ -7,8 +7,8 @@ import 'package:todo/product/utility/paddings/app_padding.dart';
 
 final class ChatInput extends StatefulWidget {
   const ChatInput({
-    super.key,
     required this.receiverId,
+    super.key,
   });
 
   final String receiverId;

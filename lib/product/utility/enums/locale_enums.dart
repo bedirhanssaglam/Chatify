@@ -20,8 +20,6 @@ enum Locales {
         return 'Türkçe';
       case Locales.en:
         return 'English';
-      default:
-        return 'Unknown';
     }
   }
 }

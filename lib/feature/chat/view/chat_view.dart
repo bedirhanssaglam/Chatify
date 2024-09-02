@@ -8,9 +8,9 @@ import 'package:todo/product/container/product_state_items.dart';
 
 final class ChatView extends StatefulWidget {
   const ChatView({
-    super.key,
     required this.receiverName,
     required this.receiverId,
+    super.key,
   });
 
   final String receiverName;

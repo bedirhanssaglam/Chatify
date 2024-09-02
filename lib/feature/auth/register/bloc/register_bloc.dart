@@ -1,17 +1,16 @@
 import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todo/feature/auth/register/bloc/register_event.dart';
+import 'package:todo/feature/auth/register/bloc/register_state.dart';
 import 'package:todo/product/service/firebase/auth_service.dart';
 
-import 'register_event.dart';
-import 'register_state.dart';
-
 class RegisterBloc extends Bloc<RegisterEvent, RegisterState> {
-  final AuthService authRepository;
-
   RegisterBloc({required this.authRepository}) : super(const RegisterState()) {
     on<RegisterRequested>(_onRegisterRequested);
   }
+
+  final AuthService authRepository;
 
   Future<void> _onRegisterRequested(RegisterRequested event, Emitter<RegisterState> emit) async {
     emit(state.copyWith(status: RegisterStatus.loading));

@@ -7,9 +7,9 @@ import 'package:todo/product/utility/paddings/app_padding.dart';
 
 final class ChatField extends StatelessWidget {
   const ChatField({
-    super.key,
     required this.messageController,
     required this.onPressed,
+    super.key,
   });
 
   final TextEditingController messageController;

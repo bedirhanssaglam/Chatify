@@ -9,9 +9,9 @@ import 'package:todo/product/utility/extensions/string_extensions.dart';
 
 final class AppListTile extends StatelessWidget {
   const AppListTile({
-    super.key,
     required this.title,
     required this.icon,
+    super.key,
     this.trailing,
     this.onTap,
     this.additionalInfoText,

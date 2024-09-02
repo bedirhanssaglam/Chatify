@@ -8,9 +8,9 @@ import 'package:todo/product/utility/paddings/app_padding.dart';
 
 final class ChatMessageItem extends StatelessWidget {
   const ChatMessageItem({
-    super.key,
     required this.message,
     required this.currentUserId,
+    super.key,
     this.nextMessage,
   });
 
@@ -20,9 +20,9 @@ final class ChatMessageItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bool isCurrentUser = message.senderId == currentUserId;
+    final isCurrentUser = message.senderId == currentUserId;
 
-    bool showNip = true;
+    var showNip = true;
     if (message.type.isText && nextMessage != null) {
       if (nextMessage!.senderId == message.senderId) {
         showNip = false;

@@ -5,8 +5,8 @@ import 'package:todo/product/utility/extensions/string_extensions.dart';
 
 final class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
   const ChatAppBar({
-    super.key,
     required this.receiverName,
+    super.key,
   });
 
   final String receiverName;

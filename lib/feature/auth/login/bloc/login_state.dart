@@ -10,13 +10,13 @@ enum LoginStatus {
 }
 
 final class LoginState extends Equatable {
-  final LoginStatus status;
-  final String? errorMessage;
-
   const LoginState({
     this.status = LoginStatus.initial,
     this.errorMessage,
   });
+
+  final LoginStatus status;
+  final String? errorMessage;
 
   LoginState copyWith({
     LoginStatus? status,

@@ -16,18 +16,19 @@ final class ProductContainer {
 
   /// Product core required items
   static void setup() {
-    locator.registerLazySingleton<SettingsCubit>(SettingsCubit.new);
+    locator
+      ..registerLazySingleton<SettingsCubit>(SettingsCubit.new)
 
-    /// Services
-    locator.registerLazySingleton<AuthService>(AuthService.new);
-    locator.registerLazySingleton<ChatService>(ChatService.new);
+      /// Services
+      ..registerLazySingleton<AuthService>(AuthService.new)
+      ..registerLazySingleton<ChatService>(ChatService.new)
 
-    /// Blocs
-    locator.registerFactory<AppBloc>(() => AppBloc(authService: locator()));
-    locator.registerFactory<LoginBloc>(() => LoginBloc(authRepository: locator()));
-    locator.registerFactory<RegisterBloc>(() => RegisterBloc(authRepository: locator()));
-    locator.registerFactory<HomeBloc>(() => HomeBloc(chatService: locator()));
-    locator.registerFactory<ChatBloc>(() => ChatBloc(locator()));
+      /// Blocs
+      ..registerFactory<AppBloc>(() => AppBloc(authService: locator()))
+      ..registerFactory<LoginBloc>(() => LoginBloc(authRepository: locator()))
+      ..registerFactory<RegisterBloc>(() => RegisterBloc(authRepository: locator()))
+      ..registerFactory<HomeBloc>(() => HomeBloc(chatService: locator()))
+      ..registerFactory<ChatBloc>(() => ChatBloc(locator()));
   }
 
   /// Read dependency item for [ProductContainer]

@@ -113,6 +113,3 @@ flutter pub get
 ```bash
 flutter run
 ```
-
-### Contributing
-If you would like to contribute, please open an issue first. Contributions to improve this project are welcome and appreciated!

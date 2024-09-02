@@ -9,9 +9,9 @@ import 'package:todo/product/utility/paddings/app_padding.dart';
 
 final class AdaptiveListSection extends StatelessWidget {
   const AdaptiveListSection({
+    required this.children,
     super.key,
     this.headerText,
-    required this.children,
     this.footerText,
   });
 

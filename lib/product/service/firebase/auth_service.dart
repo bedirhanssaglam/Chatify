@@ -49,12 +49,12 @@ final class AuthService {
     required String lastName,
   }) async {
     try {
-      final UserCredential userCredential = await _firebaseAuth.createUserWithEmailAndPassword(
+      final userCredential = await _firebaseAuth.createUserWithEmailAndPassword(
         email: email,
         password: password,
       );
 
-      final Account account = Account(
+      final account = Account(
         uid: userCredential.user!.uid,
         email: email,
         fullName: '$firstName $lastName',

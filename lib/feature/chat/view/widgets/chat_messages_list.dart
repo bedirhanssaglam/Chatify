@@ -10,8 +10,8 @@ import 'package:todo/product/utility/extensions/list_extensions.dart';
 
 final class ChatMessagesList extends StatefulWidget {
   const ChatMessagesList({
-    super.key,
     required this.receiverId,
+    super.key,
   });
 
   final String receiverId;
@@ -49,8 +49,8 @@ final class _ChatMessagesListState extends State<ChatMessagesList> with ChatMess
           controller: scrollController,
           itemCount: messages.length,
           itemBuilder: (context, index) {
-            final Message message = Message.fromDocument(messages[index]);
-            final Message? nextMessage = index + 1 < messages.length ? Message.fromDocument(messages[index + 1]) : null;
+            final message = Message.fromDocument(messages[index]);
+            final nextMessage = index + 1 < messages.length ? Message.fromDocument(messages[index + 1]) : null;
 
             return ChatMessageItem(
               message: message,

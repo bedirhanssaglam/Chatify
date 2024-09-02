@@ -7,15 +7,15 @@ import 'package:todo/product/utility/paddings/app_padding.dart';
 
 final class UserList extends StatelessWidget {
   const UserList({
-    super.key,
     required this.users,
+    super.key,
   });
 
   final List<Account> users;
 
   @override
   Widget build(BuildContext context) {
-    final Account currentUser = ProductStateItems.appBloc.state.account;
+    final currentUser = ProductStateItems.appBloc.state.account;
 
     if (users.isEmpty) return const SizedBox.shrink();
 
@@ -23,7 +23,7 @@ final class UserList extends StatelessWidget {
       itemCount: users.length,
       padding: const AppPadding.mediumVertical(),
       itemBuilder: (context, index) {
-        final Account user = users[index];
+        final user = users[index];
         if (user.email != currentUser.email) {
           return UserTile(
             fullName: user.fullName ?? '',
@@ -39,7 +39,7 @@ final class UserList extends StatelessWidget {
   void _navigateToChat(BuildContext context, Account account) {
     Navigator.push(
       context,
-      MaterialPageRoute(
+      MaterialPageRoute<void>(
         builder: (context) => ChatView(
           receiverName: account.fullName ?? '',
           receiverId: account.uid,

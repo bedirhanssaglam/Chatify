@@ -10,13 +10,13 @@ part 'chat_event.dart';
 part 'chat_state.dart';
 
 final class ChatBloc extends Bloc<ChatEvent, ChatState> {
-  final ChatService _chatService;
-
   ChatBloc(this._chatService) : super(ChatState.initial()) {
     on<_LoadMessages>(_onLoadMessages);
     on<_SendMessage>(_onSendMessage);
     on<_MarkMessageAsSeen>(_onMarkMessageAsSeen);
   }
+
+  final ChatService _chatService;
 
   Future<void> _onLoadMessages(_LoadMessages event, Emitter<ChatState> emit) async {
     try {

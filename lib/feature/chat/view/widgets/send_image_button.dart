@@ -5,8 +5,8 @@ import 'package:todo/product/utility/extensions/context_extensions.dart';
 
 final class SendImageButton extends StatelessWidget {
   const SendImageButton({
-    super.key,
     required this.onPressed,
+    super.key,
   });
 
   final VoidCallback onPressed;

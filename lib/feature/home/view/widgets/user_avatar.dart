@@ -3,8 +3,8 @@ import 'package:gen/gen.dart';
 
 final class UserAvatar extends StatelessWidget {
   const UserAvatar({
-    super.key,
     required this.account,
+    super.key,
   });
 
   final Account account;

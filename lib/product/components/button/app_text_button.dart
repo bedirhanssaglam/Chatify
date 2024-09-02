@@ -6,7 +6,7 @@ import 'package:todo/product/utility/extensions/context_extensions.dart';
 import 'package:todo/product/utility/extensions/string_extensions.dart';
 
 final class AppTextButton extends StatelessWidget {
-  const AppTextButton({super.key, required this.text, required this.onPressed});
+  const AppTextButton({required this.text, required this.onPressed, super.key});
 
   final String text;
   final VoidCallback? onPressed;

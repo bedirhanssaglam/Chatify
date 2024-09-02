@@ -1,18 +1,16 @@
 import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todo/feature/auth/login/bloc/login_event.dart';
+import 'package:todo/feature/auth/login/bloc/login_state.dart';
 import 'package:todo/product/service/exceptions/firebase_exceptions.dart';
 import 'package:todo/product/service/firebase/auth_service.dart';
 
-import 'login_event.dart';
-import 'login_state.dart';
-
 final class LoginBloc extends Bloc<LoginEvent, LoginState> {
-  final AuthService authRepository;
-
   LoginBloc({required this.authRepository}) : super(const LoginState()) {
     on<LoginRequested>(_onLoginRequested);
   }
+  final AuthService authRepository;
 
   Future<void> _onLoginRequested(LoginRequested event, Emitter<LoginState> emit) async {
     emit(state.copyWith(status: LoginStatus.loading));

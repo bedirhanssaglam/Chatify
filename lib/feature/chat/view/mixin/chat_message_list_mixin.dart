@@ -34,8 +34,8 @@ base mixin ChatMessagesListMixin on State<ChatMessagesList> {
     required String chatRoomId,
   }) {
     for (final message in messages) {
-      final data = message.data() as Map<String, dynamic>;
-      final bool isSeen = data['seen'] ?? false;
+      final data = message.data()! as Map<String, dynamic>;
+      final isSeen = data['seen'] as bool? ?? false;
 
       if (data['senderId'] != currentUserId && !isSeen) {
         ProductStateItems.chatBloc.add(ChatEvent.markMessageAsSeen(chatRoomId, message.id));

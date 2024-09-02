@@ -12,7 +12,7 @@ final class _LoginButton extends StatelessWidget {
         AppTextButton(
           onPressed: () => Navigator.push(
             context,
-            MaterialPageRoute(
+            MaterialPageRoute<void>(
               builder: (context) => const LoginView(),
             ),
           ),

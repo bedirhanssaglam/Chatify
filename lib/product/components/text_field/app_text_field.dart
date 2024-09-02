@@ -5,10 +5,10 @@ import 'package:todo/product/utility/extensions/string_extensions.dart';
 
 final class AppTextField extends StatelessWidget {
   const AppTextField({
-    super.key,
     required this.hintText,
-    this.obscureText = false,
     required this.controller,
+    super.key,
+    this.obscureText = false,
     this.suffixIcon,
     this.textInputAction,
     this.keyboardType,

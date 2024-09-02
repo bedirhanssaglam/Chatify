@@ -4,8 +4,8 @@ import 'package:todo/product/utility/extensions/string_extensions.dart';
 
 final class UserTile extends StatelessWidget {
   const UserTile({
-    super.key,
     required this.fullName,
+    super.key,
     this.onTap,
   });
 

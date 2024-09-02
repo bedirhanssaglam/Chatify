@@ -13,14 +13,14 @@ final class ImagePickerService {
   final ImagePicker _picker = ImagePicker();
 
   Future<XFile?> pickImage(BuildContext context) async {
-    final bool hasPermission = await _permissionHandler.checkAndRequestPermission(Permission.photos);
+    final hasPermission = await _permissionHandler.checkAndRequestPermission(Permission.photos);
     if (!hasPermission) {
-      ErrorDialog.show(
+      await ErrorDialog.show(
         context,
         title: LocaleKeys.dialog_logOut_title.locale,
         content: LocaleKeys.dialog_noGalleryPermission_pleaseAllowAccessToGallery.locale,
       );
     }
-    return await _picker.pickImage(source: ImageSource.gallery);
+    return _picker.pickImage(source: ImageSource.gallery);
   }
 }

@@ -10,14 +10,14 @@ import 'package:todo/product/utility/extensions/string_extensions.dart';
 typedef OnItemTapped = void Function(int);
 
 final class AppBottomNavigationBar extends StatelessWidget {
-  final OnItemTapped onItemTapped;
-  final int pageIndex;
-
   const AppBottomNavigationBar({
-    super.key,
     required this.onItemTapped,
     required this.pageIndex,
+    super.key,
   });
+
+  final OnItemTapped onItemTapped;
+  final int pageIndex;
 
   @override
   Widget build(BuildContext context) {

@@ -8,10 +8,10 @@ import 'package:todo/product/utility/paddings/app_padding.dart';
 
 final class ChatBubble extends StatelessWidget {
   const ChatBubble({
-    super.key,
     required this.message,
     required this.isCurrentUser,
     required this.showNip,
+    super.key,
     this.imageUrl,
   });
 

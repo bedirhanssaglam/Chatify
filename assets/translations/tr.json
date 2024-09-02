@@ -1,0 +1,71 @@
+{
+    "appName": "Chatify",
+    "login": {
+        "welcomeText": "Chatify'a Hoş Geldiniz!",
+        "email": "Email",
+        "password": "Şifre",
+        "loginButton": "Giriş Yap",
+        "dontHaveAnAccount": "Hesabınız yok mu?",
+        "registerNow": "Kayıt Ol"
+    },
+    "register": {
+        "letsCreateAnAccount": "Sizin için bir hesap oluşturalım!",
+        "name": "Ad",
+        "surname": "Soyad",
+        "confirmPassword": "Şifre (Tekrar)",
+        "registerButton": "Kayıt Ol",
+        "alreadyHaveAnAccount": "Zaten bir hesabınız var mı?"
+    },
+    "home": {
+        "appBar": "Kullanıcılar"
+    },
+    "chat": {
+        "typeMessage": "Bir mesaj yazın...",
+        "noMessages": "Henüz bir mesaj yok"
+    },
+    "settings": {
+        "appBar": "Ayarlar",
+        "general": "Genel",
+        "personalizeApp": "Tercihlerinizi yaparak uygulamanızı kişiselleştirin",
+        "language": "Dil",
+        "nightMode": "Gece Modu",
+        "logOut": "Çıkış yap"
+    },
+    "bottomNavBar": {
+        "home": "Ana sayfa",
+        "settings": "Ayarlar"
+    },
+    "dialog": {
+        "logOut": {
+            "title": "Uyarı",
+            "areYouSureLogOut": "Çıkış yapmak istediğinize emin misiniz?",
+            "cancelText": "İptal"
+        },
+        "noGalleryPermission": {
+            "pleaseAllowAccessToGallery": "Lütfen fotoğraf paylaşabilmek için uygulama ayarlarından galeriye erişim izni verin."
+        }
+    },
+    "error": {
+        "failedToUsers": "Kullanıcılar yüklenemedi.",
+        "unknownException": "Bilinmeyen bir hata oluştu.",
+        "userDisabled": "Bu kullanıcı devre dışı bırakıldı. Yardım için lütfen destekle iletişime geçin.",
+        "invalidEmail": "Geçersiz email.",
+        "signUp": {
+            "emailAlreadyInUse": "Bu e-mail için zaten bir hesap mevcut",
+            "operationNotAllowed": "İşleme izin verilmiyor. Lütfen desteğe başvurun.",
+            "weakPassword": "Lütfen daha güçlü bir şifre girin."
+        },
+        "login": {
+            "userNotFound": "E-mail bulunamadı, lütfen bir hesap oluşturun.",
+            "wrongPassword": "Yanlış şifre, lütfen tekrar deneyin."
+        }
+    },
+    "validators": {
+        "normal": "Bu alan boş bırakılamaz.",
+        "invalidFormat": "Geçersiz format",
+        "confirmPassword": "Şifrenizi tekrar giriniz.",
+        "notMatch": "Parolalar eşleşmiyor.",
+        "email": "Mail adresinizi giriniz.",
+        "password": "Şifre giriniz."
+    }
+}

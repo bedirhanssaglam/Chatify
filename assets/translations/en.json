@@ -1,0 +1,71 @@
+{
+    "appName":"Chatify",
+    "login": {
+        "welcomeText": "Welcome to Chatify!",
+        "email": "Email",
+        "password": "Password",
+        "loginButton": "Login",
+        "dontHaveAnAccount": "Don't have an account?",
+        "registerNow": "Register now"
+    },
+    "register": {
+        "letsCreateAnAccount": "Let's create an account for you!",
+        "name": "Name",
+        "surname": "Surname",
+        "confirmPassword": "Confirm Password",
+        "registerButton": "Register",
+        "alreadyHaveAnAccount": "Already have an account?"
+    },
+    "home": {
+        "appBar": "Users"
+    },
+    "chat": {
+        "typeMessage": "Type a message...",
+        "noMessages": "No messages."
+    },    
+    "settings": {
+        "appBar": "Settings",
+        "general": "General",
+        "personalizeApp": "Personalize your app by making your preferences",
+        "language": "Language",
+        "nightMode": "Night Mode",
+        "logOut": "Log out"
+    },
+    "bottomNavBar": {
+        "home": "Home",
+        "settings": "Settings"
+    },   
+    "dialog": {
+        "logOut": {
+            "title": "Warning",
+            "areYouSureLogOut": "Are you sure you want to log out?",
+            "cancelText": "Cancel"
+        },
+        "noGalleryPermission": {
+            "pleaseAllowAccessToGallery": "Please allow access to the gallery from the application settings to share photos."
+        }        
+    },    
+    "error": {
+        "failedToUsers": "Failed to load users.",
+        "unknownException": "An unknown exception occurred.",
+        "userDisabled": "This user has been disabled. Please contact support for help.",
+        "invalidEmail": "Email is not valid or badly formatted.",
+        "signUp": {
+            "emailAlreadyInUse": "An account already exists for that email.",
+            "operationNotAllowed": "Operation is not allowed. Please contact support.",
+            "weakPassword": "Please enter a stronger password."
+        },
+        "login": {
+            "userNotFound": "Email is not found, please create an account.",
+            "wrongPassword": "Incorrect password, please try again."
+        }        
+    },
+    "validators": {
+        "normal": "This field cannot be left blank.",
+        "invalidFormat": "Invalid format",
+        "confirmPassword": "Enter your password again.",
+        "notMatch": "Passwords do not match.",
+        "email": "Enter your e-mail address.",
+        "password": "Enter password."
+    }    
+}
